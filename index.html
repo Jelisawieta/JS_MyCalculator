@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator" data-cy="calculator">
+        <input type="text" class="calculator-screen" data-cy="display" disabled />
+        <div class="calculator-keys" data-cy="keys">
+            <button type="button" class="operator" value="+" data-cy="add">+</button>
+            <button type="button" class="operator" value="-" data-cy="subtract">-</button>
+            <button type="button" class="operator" value="*" data-cy="multiply">&times;</button>
+            <button type="button" class="operator" value="/" data-cy="divide">&divide;</button>
+
+            <button type="button" value="7" data-cy="7">7</button>
+            <button type="button" value="8" data-cy="8">8</button>
+            <button type="button" value="9" data-cy="9">9</button>
+
+            <button type="button" value="4" data-cy="4">4</button>
+            <button type="button" value="5" data-cy="5">5</button>
+            <button type="button" value="6" data-cy="6">6</button>
+
+            <button type="button" value="1" data-cy="1">1</button>
+            <button type="button" value="2" data-cy="2">2</button>
+            <button type="button" value="3" data-cy="3">3</button>
+
+            <button type="button" value="0" data-cy="0">0</button>
+            <button type="button" class="decimal" value="." data-cy="decimal">.</button>
+            <button type="button" class="all-clear" value="all-clear" data-cy="clear">AC</button>
+            <button type="button" class="equal-sign operator" value="=" data-cy="equal">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
