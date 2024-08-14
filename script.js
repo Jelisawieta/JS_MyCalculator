@@ -12,16 +12,16 @@ const calculator = {
     operator: null,
 };
 
-// Function to handle digit input
+/* inputDigit - function to handle digit input
+ * If waiting for the second operand, replace the display value with the new digit,
+ * Otherwise, append the new digit to the display value
+ */
 function inputDigit(digit) {
     const { displayValue, waitingForSecondOperand } = calculator;
-
-    // If waiting for the second operand, replace the display value with the new digit
     if (waitingForSecondOperand === true) {
         calculator.displayValue = digit;
         calculator.waitingForSecondOperand = false;
     } else {
-        // Otherwise, append the new digit to the display value
         calculator.displayValue = displayValue === '0' ? digit : displayValue + digit;
     }
 }
